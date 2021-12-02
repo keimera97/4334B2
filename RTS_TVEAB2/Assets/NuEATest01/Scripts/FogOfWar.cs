@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class FogOfWar : MonoBehaviour
 {
     public GameObject m_fogOfWarPlane;
-    public GameObject[] G_player;
+    //public GameObject[] G_player;
 
-     Transform[] t_player; 
+    public   Transform[] t_player; 
 
     public LayerMask m_fogLayer;
     public float m_radius = 5f;
@@ -33,12 +33,12 @@ private void Start()
 
         // WhoPlayer.length = m_player.lenght;
 
-        t_player = new Transform[G_player.Length];
+       /* t_player = new Transform[G_player.Length];
 
         for (int np = 0; np < G_player.Length; np++)
         {
             t_player[np] = G_player[np].transform;
-        }
+        }*/
         for (int np = 0; np < t_player.Length; np++)
         {
 
